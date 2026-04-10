@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Page | Maile Herlean</title>
+    <link rel="stylesheet" href="scratch-style.css">
+</head>
+<body>
+
+    <div class="top-nav">
+        <a href="index.html">Back to Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="travel.html">Travel</a>
+        <a href="app.html">Mini App</a>
+    </div>
+
+    <div class="hero-box" id="top">
+        <h1>My Scratch Page</h1>
+        <p>This page is built from scratch and shows some of my favorite things: beach life, travel, and adventure.</p>
+        <p><a href="#tableau-section">Jump to the Tableau graph</a></p>
+    </div>
+
+    <div class="content-box">
+        <h2>Things I Love</h2>
+        <ol>
+            <li>Beach days
+                <ul>
+                    <li>Sunshine</li>
+                    <li>Ocean waves</li>
+                    <li>Salt air</li>
+                </ul>
+            </li>
+            <li>Traveling
+                <ul>
+                    <li>Beautiful views</li>
+                    <li>New cultures</li>
+                    <li>Adventure</li>
+                </ul>
+            </li>
+            <li>Fun experiences</li>
+        </ol>
+    </div>
+
+    <div class="content-box">
+        <h2>Favorite Beach Mood</h2>
+        <img src="20963.jpg" alt="Beach and ocean view" class="scratch-image">
+    </div>
+
+    <div class="content-box">
+        <h2>Favorite Video</h2>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/ScMzIvxBSi4"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="content-box" id="tableau-section">
+        <h2>Interactive Tableau Graph</h2>
+        <p>This is a live embedded Tableau visualization.</p>
+
+        <div class='tableauPlaceholder' id='viz1680000000000' style='position: relative'>
+            <noscript>
+                <a href='#'>
+                    <img alt='Tableau Viz' src='https://public.tableau.com/static/images/Re/RegionalSampleWorkbook/College/1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='RegionalSampleWorkbook/College' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/Re/RegionalSampleWorkbook/College/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1680000000000');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width='100%';
+            vizElement.style.height='827px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
+
+    <div class="content-box">
+        <h2>Back to the Top</h2>
+        <p><a href="#top">Go back to the top of this page</a></p>
+    </div>
+
+</body>
+</html>
