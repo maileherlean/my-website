@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini App | Maile Herlean</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom, #fff9ef, #ffe8cc, #ffd6a5);
+            color: #333;
+            text-align: center;
+        }
+
+        .nav {
+            background: #ff9f1c;
+            padding: 16px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 14px;
+        }
+
+        .app-box {
+            background: white;
+            width: 80%;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 5px 14px rgba(0,0,0,0.10);
+        }
+
+        h1 {
+            color: #ff7b54;
+        }
+
+        button {
+            background: #0081a7;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005f73;
+        }
+
+        #jokeOutput {
+            margin-top: 20px;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="scratch.html">Scratch Page</a>
+        <a href="resume.html">Resume</a>
+        <a href="travel.html">Travel</a>
+    </div>
+
+    <div class="app-box">
+        <h1>Beachy Joke Generator</h1>
+        <p>Click the button for a random little joke.</p>
+        <button onclick="showJoke()">Show Joke</button>
+        <div id="jokeOutput">Your joke will appear here 🌞</div>
+    </div>
+
+    <script>
+        const jokes = [
+            "Why did the beach blush? Because the sea weed.",
+            "What did the ocean say to the shore? Nothing, it just waved.",
+            "Why don't surfers get lost? They go with the flow.",
+            "Why was the sand so smart? Because it had lots of grit.",
+            "What’s a wave’s favorite song? Anything with a good current beat."
+        ];
+
+        function showJoke() {
+            const randomIndex = Math.floor(Math.random() * jokes.length);
+            document.getElementById("jokeOutput").innerText = jokes[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
